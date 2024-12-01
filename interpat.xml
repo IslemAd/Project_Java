@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/logo">
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welc_pat"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Section 1 : Manage Appointments -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/rendez"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Manage_app"
+            android:padding="12dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Section 2 : Medical Records -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/records"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Manage_Records"
+            android:padding="12dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBackpat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textSize="20dp"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>

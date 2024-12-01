@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/logo">
+
+    <!-- Titre de l'écran -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Medical_Record"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Informations personnelles -->
+    <EditText
+        android:id="@+id/edittextName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entre_name"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewAge1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/age"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittextAge2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entre_age"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Champ Sexe -->
+    <TextView
+        android:id="@+id/textViewSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/gender_array" />
+
+    <!-- Antécédents médicaux -->
+    <TextView
+        android:id="@+id/textViewhistory1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Medical_history"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/Edittexthistory2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Medical_history"
+        android:textSize="16sp"
+        android:paddingBottom="4dp"/>
+
+
+    <!-- Liste des rendez-vous -->
+    <TextView
+        android:id="@+id/textViewRecApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Recent_appointments"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView pour afficher les rendez-vous -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"/>
+
+    <!-- Bouton pour voir plus de détails -->
+    <Button
+        android:id="@+id/buttonBackpat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_interpat"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

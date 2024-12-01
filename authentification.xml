@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bleug">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medic_app"
+        android:textAlignment="center"
+        android:textColor="@color/green3"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp" />
+
+    <!-- Logo de l'application -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="254dp"
+        android:layout_height="154dp"
+        android:src="@drawable/logo2"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Bouton Sign In -->
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="236dp"
+        android:layout_height="103dp"
+        android:backgroundTint="@color/bleu_in"
+        android:text="@string/sign_in"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Texte "or" -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:textColor="@color/bleu3"
+        android:textSize="48sp"
+        android:layout_marginTop="40dp" />
+
+    <!-- Bouton Sign Up -->
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="236dp"
+        android:layout_height="103dp"
+        android:backgroundTint="@color/bleu_up"
+        android:text="@string/sign_up"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+
+
+</LinearLayout>
